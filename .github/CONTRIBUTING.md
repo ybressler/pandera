@@ -40,7 +40,7 @@ development environment.
 ```bash
 pip install uv
 uv venv
-uv sync --all-extras
+uv sync --all-groups
 source .venv/bin/activate
 ```
 
@@ -53,7 +53,7 @@ uv pip install polars-lts-cpu
 #### Run Tests
 
 ```bash
-pytest tests/core
+pytest tests/base
 ```
 
 #### Build Documentation Locally
